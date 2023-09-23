@@ -1,4 +1,5 @@
 def Zeck_sys(A):
+    if A == 0: return 0
     ryad_fib = [1, 1]
     while ryad_fib[-1] < A:
         ryad_fib.append(ryad_fib[-1] + ryad_fib[-2])
@@ -18,8 +19,8 @@ A = 144
 B = 10
 C = 'Fib'
 
-print(Zeck_sys(A))
-
+print("Ответ на задание 11:",Zeck_sys(A))
+print("Введите число")
 A = int(input())
 
 print(Zeck_sys(A))
